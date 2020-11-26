@@ -1,7 +1,7 @@
 # For all available keys and their usages please refer to https://acrlakshman.github.io/profileio/docs/
 # Comments for the configurations below will be updated soon.
 config:
-  homepage: "https://profileio.lakshmananumolu.com"
+  homepage: "https://mrugank2110.github.io"
   theme:
     value: panther
     render: true
@@ -14,31 +14,29 @@ config:
   analytics:
     ga:
       trackingId: ""
-      enable: true
-  meta:
-    showResumeLink: true
+      enable: false
 basics:
   name:
-    value: Lakshmi Vera
+    value: Mrugank Bhatt
     render: true
   label:
-    value: Senior Software Engineer
+    value: Research Engineer
     render: true
   image:
     value: pic.png
     render: true
   email:
-    value: anumolu@uwalumni.com
+    value: mrugank.iitkgp@gmail.com
     render: true
   phone:
     value: ''
     render: false
   url:
-    value: 'https://profileio.lakshmananumolu.com'
-    render: true
+    value: 'https://mrugank2110.github.io'
+    render: false
   summary:
     label: About me
-    value: "Sample text written as part of the demo for profileio. Sample text written as part of the demo for profileio. Sample text written as part of the demo for profileio."
+    value: summary.md
     render: true
   location:
     value:
@@ -51,28 +49,28 @@ basics:
   profiles:
     - value:
         network: googlescholar
-        url: https://scholar.google.com/citations?user=VcGv5cEAAAAJ&hl=en
+        url: https://www.researchgate.net/profile/Mrugank_Bhatt
       render: true
     - value: # if username is provided but not url, then we generate the url.
         network: github
-        username: acrlakshman
+        username: mrugank2110
       render: true
     - value:
         network: linkedin
-        url: https://www.linkedin.com/in/lakshmananumolu/
+        url: https://www.linkedin.com/in/mrugank-bhatt/
       render: true
     - value:
         network: twitter
         username: acrlakshman
         url: https://twitter.com/acrlakshman
-      render: true
+      render: false
     - value:
         network: vimeo
         url: https://vimeo.com/user24179204
       render: false
 work:
   label: Experience
-  rank: 1
+  rank: 2
   list:
     - value:
         name: Walt Disney Animation Studios
@@ -84,13 +82,10 @@ work:
         endDate: Present # string
         active: true
         highlights:
-          - brief: ""
-            detail: "Present few details and its impact"
-          - detail: Sample text written as part of the demo for profileio
+          - detail: Sample text written as part of the demo for profileio. Sample text written as part of the demo for profileio
           - brief: ""
             detail: This is the sample text written for the demo of profileio
-          - detail: Sample text written as part of the demo for profileio
-      render: true
+      render: false
     - value:
         name: Dreamworks Animation
         location: Glendale, CA
@@ -101,62 +96,51 @@ work:
         endDate: "2019" # string
         active: false # `true` if currently working, else `false`
         highlights:
-          - detail: Sample text written as part of the demo for profileio
+          - detail: Sample text written as part of the demo for profileio. Sample text written as part of the demo for profileio
           - brief: ""
             detail: This is the sample text written for the demo of profileio
-          - detail: Sample text written as part of the demo for profileio
-      render: true
+      render: false
     - value:
-        name: University of Wisconsin-Madison
-        location: Madison, WI
+        name: University of Minnesota
+        location: Minnesota, MN
         brief: University
         position: Research Assistant
-        url: https://wisc.edu
-        startDate: '2013'
-        endDate: '2017'
+        url: https://umn.edu
+        startDate: '2014'
+        endDate: '2020'
+        active: false
         highlights:
-          - detail: Implemented phase-change capabilities into in-house developed solver to perform two-phase boilingsimulations
-          - detail: Developed fourth order accurate semi-Lagrangian method tosolve Hamilton-Jacobi equations that improved the quality of two-phase fluid simulations in the context of level set methods
-          - detail: Developed post-processing utilities in C++ to achieve photo-realistic rendering for density fields from OpenFOAM results using Mitsuba
+          - detail: Developed LES capabilities to study turbulent cavitating flows in complex geometries.
       render: true
 education:
   label: Education
-  rank: 7
+  rank: 1
   list:
     - value:
-        institution: University of Wisconsin-Madison
-        url: https://wisc.edu
-        major: Computer Science
+        institution: University of Minnesota
+        url: https://umn.edu
+        major: Aerospace Engineering and Mechanics
         minor: ''
         degree: Ph.D.
-        # grade: 3.9
-        # gradeTotal: 4.0
+        grade: 3.9
+        gradeTotal: 4.0
         courses:
           - CS521 - Computer Graphics
-          - CS801 - HPC
-      render: true
-    - value:
-        institution: University of Wisconsin-Madison
-        url: https://wisc.edu
-        major: Computer Science and Mathematics
-        minor: ''
-        degree: B.S.
       render: true
 projects:
   label: "Projects"
-  rank: 6
+  rank: 3
   maxItemsToRender: 3 # If this is not provided, it defaults to 5 (src/config.ts)
   list:
     - value:
         name: ProfileIO
         description: "Delightfully simple website and resume generator for students, researchers, and engineers"
-        team: "with Lakshman Anumolu"
+        team: "_with [Lakshman Anumolu](//lakshmananumolu.com)_"
         note: ""
         thumbnail: profileio.png
         highlights:
-          - detail: Delightfully simple website and resume generator for students, researchers, and engineers
-          - detail: Sample text written as part of the demo for profileio
-          - detail: Sample text written as part of the demo for profileio
+          - brief: ""
+            detail: Website and resume generator via YAML
         keywords:
           - resume
           - website
@@ -173,54 +157,16 @@ projects:
         webPage:
           slug: profileio
           detail: project/profileio.md # if the content is empty, "url" will be linked in the homepage for the project
-      render: true
-    - value:
-        name: Project VI
-        description: Sample text written as part of the demo for ProfileIO
-        team: ""
-        note: ""
-        thumbnail: bmv_t.gif
-        highlights:
-          - detail: Sample text written as part of the demo for profileio
-          - detail: Sample text written as part of the demo for profileio
-        keywords:
-          - STL
-          - OBJ
-          - TLGF
-          - surface mesh
-        startDate: '2015'
-        endDate: Present
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: https://github.com/acrlakshman/profileio
-      render: true
-    - value:
-        name: Project V
-        description: Sample text written as part of the demo for ProfileIO
-        team: ""
-        note: ""
-        thumbnail: crystal_growth_t.png
-        highlights:
-          - detail: Sample text written as part of the demo for profileio
-          - detail: Sample text written as part of the demo for profileio
-        keywords:
-          - STL
-          - OBJ
-          - TLGF
-          - surface mesh
-        startDate: '2015'
-        endDate: Present
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: https://github.com/acrlakshman/profileio
-      render: true
+      render: false
 awards:
   label: Awards & Achievements
-  rank: 3
+  rank: 11
   list:
     - value:
-        title: Marshal award
-        date: May 2114
-        awarder: ILASS
-        summary: Best paper for demonstrating spray characteristics during so and so configuration
+        title: Institute Silver Medal
+        date: May 2014
+        awarder: IIT Kharagpur
+        summary: Best academic performance in the Department of Aerospace Engineering
       render: true
 publications:
   # Format follows: http://web.mit.edu/rsi/www/pdfs/bibtex-format.pdf
@@ -230,24 +176,22 @@ publications:
   list:
     - value:
         type: article
-        author: "Author I, Author II"
-        title: "Made-up title of an article for ProfileIO' demo"
-        journal: Journal of Computational Physics
-        volume: 353
-        year: 2018
-        number: 0
+        author: "**Mrugank Bhatt**, Krishnan Mahesh"
+        title: "Numerical investigation of partial cavitation regimes over a wedge using large-eddy simulation."
+        journal: International Journal of Multiphase Flow
+        year: 2020
         pages: 377-406
-        thumbnail: gals_phase_change.png
+        thumbnail: wedge.png
         # If webPage is not provided, then url will be linked in the homepage for this project
-        url: https://www.sciencedirect.com/science/article/pii/S0021999117307696
+        url: https://dept.aem.umn.edu/~kmahesh/globalassets/publpdf/journal/mrugank_ijmf19.pdf
         # webPage:
-          # slug: levelset-phasechange
-          # detail: publications/levelset-phasechange.md
+        #   slug: levelset-phasechange
+        #   detail: publications/levelset-phasechange.md
       render: true
     - value:
         type: book
-        author: "Author I, Author II, and Author III"
-        title: "Sample title I of a book made-up to give demo for profileio"
+        author: "Author I, **Author II**, and Author III"
+        title: "Sample title of a book made-up to give demo for profileio"
         series: "Encyclopedia of Two-Phase Heat Transfer and Flow"
         volume: 3
         publisher: World Scientific
@@ -256,142 +200,55 @@ publications:
         thumbnail: dns_phasechange.png
         # If webPage is not provided, then url will be linked in the homepage for this project
         url: https://www.worldscientific.com/doi/abs/10.1142/9789813229440_0008
-      render: true
-    - value:
-        type: article
-        author: "Author I, Author II, and Author III"
-        title: "Sample title II of an article made-up to give demo for profileio"
-        journal: Journal of Computational Physics
-        volume: 334
-        year: 2017
-        number: 0
-        pages: 81-101
-        thumbnail: levelset_deformation.png
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: https://www.sciencedirect.com/science/article/pii/S0021999116307045
-      render: true
-    - value:
-        type: article
-        author: "Author I, Author II, and Author III"
-        title: Sample title III of an article made-up to give demo for profileio
-        journal: International Journal of Heat and Fluid Flow
-        volume: 44
-        year: 2013
-        number: 0
-        pages: 610-623
-        thumbnail: jet_paper.jpg
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: https://www.sciencedirect.com/science/article/pii/S0142727X13001707
-      render: true
-    - value:
-        type: article
-        author: "Author I and Author II"
-        title: Sample title IV of an article made-up to give demo for profileio
-        journal: International Journal of Numerical Methods in Fluids
-        volume: 73
-        year: 2013
-        number: 12
-        pages: 1011-1041
-        thumbnail: gals_reinit.jpg
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: http://onlinelibrary.wiley.com/doi/10.1002/fld.3834/abstract
-      render: true
-    - value:
-        type: article
-        author: "Author I, Author II, and Author III"
-        title: Sample title V of an article made-up to give demo for profileio
-        journal: "Computational Science & Discovery"
-        volume: 5
-        year: 2012
-        number: 0
-        pages: "014016: 1-36"
-        thumbnail: interfoam_thumbnail.png
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: http://iopscience.iop.org/1749-4699/5/1/014016
-      render: true
+      render: false
 gallery:
   label: Gallery
-  rank: 20
+  rank: 5
   list:
     - value:
         type: image
-        src: bmv_t.gif
+        src: wedge_shock.gif
         caption:
-          title: ProfileIO
-          description: "Delightfully simple website and resume generator for students, researchers, and engineers"
-      render: true
-    - value:
-        type: image
-        src: scene_templates.png
-        caption:
-          title: ""
-          description: ""
-      render: true
-    - value:
-        type: image
-        src: bmv_t.gif
-        caption:
-          title: Basic Model Viewer
-          description: "A Qt5 based visualization utility for basic geometric objects"
+          title: bubbly shock regime
+          description: "Iso-contours of vapor void fractions with pressure on vertical plane."
       render: true
     - value:
         type: video
         platform: youtube
         videoId: 35UEkzww5ds
-      render: true
-    - value:
-        type: video
-        platform: youtube
-        videoId: SRvZxvmoa_g
-      render: true
-    - value:
-        type: video
-        platform: youtube
-        videoId: CsZua1qI4Zc
-      render: true
-
-# For skills we will demonstrate using `list` field in "custom", check below.
+      render: false
 skills:
   label: Skills
-  rank: 20
+  rank: 6
   list:
     - value:
-        name: Web development
+        name: Grid generation tools
         level: Master
         keywords:
-          - HTML
-          - CSS
-          - JavaScript
-      render: false
+          - Gridpro
+          - Pointwise
+      render: true
 languages:
   label: Languages
-  rank: 30
+  rank: 7
   list:
     - value:
         language: English
-        fluency: Fluent
-      render: true
-    - value:
-        language: Spanish
         fluency: Native speaker
-      render: true
-    - value:
-        language: French
-        fluency: Fluent
-      render: true
+      render: false
 interests:
   label: Interests
-  rank: 40
+  rank: 8
   list:
     - value:
-        name: Sports
+        name: Wildlife
         keywords:
-          - Soccer
-          - Basketball
-      render: true
+          - Ferrets
+          - Unicorns
+      render: false
 references:
   label: References
-  rank: 50
+  rank: 9
   list:
     - value:
         name: John Doe
@@ -404,9 +261,8 @@ references:
         region: State
         phoneNumber: '1111111111' # string
         email: user@domain.edu
-        url: "https://github.com/acrlakshman/profileio"
       render: false
-
+ 
 # Custom fields
 custom:
   # Create patents section of type `list`
@@ -418,11 +274,11 @@ custom:
           # text in brief will be displayed in bold.
           brief: "Physics based simulations:"
           detail: "Level set method I for artistic simulations (9999998). Level set method II for artistic simulations (9999999)."
-        render: true
+        render: false
       - value:
           brief: "Experimental physics:"
           detail: "Novel PIV method to quatify velocity of fluid flow through swirl atomizer (9999997)"
-        render: true
+        render: false
     meta:
       listStyleType: "none" # no bullets
 
@@ -434,15 +290,15 @@ custom:
       - value:
           brief: "Programming Languages:"
           detail: "Fluent: C++, C, Go. Experienced: Python, JavaScript, PHP"
-        render: true
+        render: false
       - value:
           brief: "Libraries:"
           detail: "Eigen, NumPy, MPI, etc."
-        render: true
+        render: false
       - value:
           brief: "Tools:"
           detail: "CMake, gdb, valgrind, etc."
-        render: true
+        render: false
     meta:
       listStyleType: "none"
 
@@ -459,8 +315,8 @@ custom:
           url: ""
           startDate: "" # string
           endDate: "2014" # string
-          active: true
+          active: false
           highlights:
             - detail: This is the sample text written for the demo of profileio
             - detail: Sample text written as part of the demo for profileio
-        render: true
+        render: false
