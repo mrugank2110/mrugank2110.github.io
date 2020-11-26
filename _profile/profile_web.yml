@@ -177,6 +177,7 @@ publications:
         title: "Numerical investigation of partial cavitation regimes over a wedge using large-eddy simulation."
         journal: International Journal of Multiphase Flow
         year: 2020
+        volume: 0
         pages: 377-406
         thumbnail: wedge.png
         # If webPage is not provided, then url will be linked in the homepage for this project
