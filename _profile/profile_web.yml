@@ -267,7 +267,7 @@ custom:
   # Since "value" is given, this section will be rendered in the homepage with the content of "value".
   # Since "webPage" is provided, this will also be rendered as another page under the value of "slug".
   - label: Important Links
-    value: [links](important-links)
+    value: "[links](important-links)"
     webPage:
       slug: important-links
       detail: links.md
