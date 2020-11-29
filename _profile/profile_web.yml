@@ -70,32 +70,16 @@ work:
   rank: 2
   list:
     - value:
-        name: Walt Disney Animation Studios
-        location: Burbank, CA
+        name: Convergent Science
+        location: Madison, WI
         brief: ""
-        position: Senior Software Engineer
-        url: "https://www.disneyanimation.com/"
-        startDate: "2019" # string
-        endDate: Present # string
-        active: true
+        position: Research Engineer
+        url: "https://convergecfd.com/"
+        startDate: "2020" # string
+        endDate: "" # string
+        active: true # `true` if currently working, else `false`
         highlights:
-          - detail: Sample text written as part of the demo for profileio. Sample text written as part of the demo for profileio
-          - brief: ""
-            detail: This is the sample text written for the demo of profileio
-      render: false
-    - value:
-        name: Dreamworks Animation
-        location: Glendale, CA
-        brief: ""
-        position: Software Engineer
-        url: "https://www.dreamworks.com/"
-        startDate: "2017" # string
-        endDate: "2019" # string
-        active: false # `true` if currently working, else `false`
-        highlights:
-          - detail: Sample text written as part of the demo for profileio. Sample text written as part of the demo for profileio
-          - brief: ""
-            detail: This is the sample text written for the demo of profileio
+          - detail: Code feature implementation, debugging, submodule developments for the converge software.
       render: false
     - value:
         name: University of Minnesota
@@ -114,35 +98,57 @@ education:
   rank: 1
   list:
     - value:
-        institution: University of Minnesota
-        url: https://umn.edu
+        institution: University of Minnesota (2014-2020)
+        url: https://twin-cities.umn.edu/
         major: Aerospace Engineering and Mechanics
         minor: ''
         degree: Ph.D.
-        grade: 3.9
+        grade: 3.93
         gradeTotal: 4.0
         courses:
           - CS521 - Computer Graphics
       render: true
+    - value:
+        institution: University of Minnesota (2014-2017)
+        url: https://twin-cities.umn.edu/
+        major: Aerospace Engineering and Mechanics
+        minor: 'Mathematics'
+        degree: M.S.
+        grade: 3.97
+        gradeTotal: 4.0
+      render: true
+    - value:
+        institution: Indian Institute of Technology Kharagpur (2010-2014)
+        url: https://twin-cities.umn.edu/
+        major: Aerospace Engineering and Mechanics
+        minor: ''
+        degree: B.Tech. (Hons.)
+        grade: 9.04
+        gradeTotal: 10.0
+      render: true
+      
 projects:
   label: "Projects"
   rank: 3
   maxItemsToRender: 3 # If this is not provided, it defaults to 5 (src/config.ts)
   list:
     - value:
-        name: ProfileIO
-        description: "Delightfully simple website and resume generator for students, researchers, and engineers"
-        team: "_with [Lakshman Anumolu](//lakshmananumolu.com)_"
+        name: LES of turbulent cavitating flows using the homogeneous mixture model
+        description: "Developed Large Eddy Simulation (LES) capabilities to study cavitation on marine propulsors in the in-house parallel compressible multiphase solver MPCUGLES including,
+(i) low Mach time derivative preconditioning and (ii) rotating frame of reference implementation."
+        team: ""
         note: ""
-        thumbnail: profileio.png
+        thumbnail: wedge.png
         highlights:
           - brief: ""
-            detail: Website and resume generator via YAML
+            detail: Partial cavitating regimes over a sharp wedge
         keywords:
-          - resume
-          - website
-          - YAML
-          - markdown
+          - Multiphase flows/cavitation
+          - Compressible flows
+          - Homogeneous mixture model
+          - LES
+          - Partial cavitation
+          - Preconditioning
         startDate: '2020' # string
         endDate: Present
         # If webPage is not provided, then url will be linked in the homepage for this project
@@ -187,19 +193,6 @@ publications:
         #   slug: levelset-phasechange
         #   detail: publications/levelset-phasechange.md
       render: true
-    - value:
-        type: book
-        author: "Author I, **Author II**, and Author III"
-        title: "Sample title of a book made-up to give demo for profileio"
-        series: "Encyclopedia of Two-Phase Heat Transfer and Flow"
-        volume: 3
-        publisher: World Scientific
-        address: ''
-        year: 2018
-        thumbnail: dns_phasechange.png
-        # If webPage is not provided, then url will be linked in the homepage for this project
-        url: https://www.worldscientific.com/doi/abs/10.1142/9789813229440_0008
-      render: false
 gallery:
   label: Gallery
   rank: 5
@@ -240,27 +233,28 @@ interests:
   rank: 8
   list:
     - value:
-        name: Wildlife
+        name: Music
         keywords:
-          - Ferrets
-          - Unicorns
+          - Singing
+          - Guitar
+          - Keyboard         
       render: false
 references:
   label: References
   rank: 9
   list:
     - value:
-        name: John Doe
+        name: Krishnan Mahesh 
         title: Prof.
-        affiliation: University Name
-        address: XXXX University Ave
-        postalCode: WI XXXXX
-        city: City
+        affiliation: University of Minnesota
+        address: 110 Union St SE 
+        postalCode: MN 55414
+        city: Minneapolis
         countryName: USA
-        region: State
-        phoneNumber: '1111111111' # string
-        email: user@domain.edu
-      render: false
+        region: Minnesota
+        phoneNumber: '' # string
+        email: kmahesh@umn.edu
+      render: true
 custom:
   # In the homepage, these sections are always rendered at the end.
   # If these sections are to be rendered in homepage, their order will be as listed below.
