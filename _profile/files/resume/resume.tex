@@ -1,0 +1,138 @@
+
+	\documentclass{res}
+	\usepackage{fancyhdr}
+	\usepackage{fontspec}
+	\usepackage{color}
+	\usepackage{multicol}
+	\usepackage{setspace}
+	\usepackage{xcolor}
+	\usepackage{hyperref}
+	\usepackage{enumitem}
+	\setlength{\textwidth}{6.5in}
+	
+	\newcommand{\HRule}{\rule{\linewidth}{0.25pt}}
+	\newsectionwidth{0.25in}
+
+	% format URLs
+	\colorlet{ucolor}{yellow!14!black!14!red!72!}
+	\urlstyle{same}
+	\hypersetup{
+		colorlinks=true,
+		linkcolor=ucolor,
+		urlcolor=ucolor
+	}
+
+	\pagestyle{fancy}
+	\pagenumbering{arabic}
+
+	\newcommand{\spacedsc}{\scshape\addfontfeatures{LetterSpace=15}}
+	\renewcommand{\sectionfont}{\normalfont\Large\spacedsc\color{gray}\raggedright}
+	\renewcommand{\headrulewidth}{0.0pt}
+	
+	\begin{document}
+
+	\hspace*{-0.05\textwidth}
+	\begin{minipage}[t]{0.6\textwidth}
+	\begin{flushleft}
+	\vspace*{\fill}
+	{\fontsize{45}{45}\selectfont Mrugank\textbf{Bhatt}}
+	\end{flushleft}
+	\end{minipage}
+	\begin{minipage}[t]{0.44\textwidth}
+	\begin{flushright}
+	\href{mailto:mrugank.iitkgp@gmail.com}{mrugank.iitkgp@gmail.com} \\ 
+	\end{flushright}
+	\end{minipage}
+
+	\begin{resume}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section{\MakeUppercase{About me}} \vskip 0.15in
+	I am currently employed at [This Company]. Before this I was in graduate school at [This University] where I earned a PhD. in [Computer Science](https://www.cs.wisc.edu/) under the supervision of [This Professor].
+
+**My interests:**
+* Computer Graphics
+* Develop web \& desktop applications
+* Physics based Modeling and Simulations
+
+[This University]: https://wisc.edu
+[This Professor]: https://wisc.edu
+[This Company]: https://github.com/acrlakshman/profileio
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{\MakeUppercase{Education}} \vskip 0.15in
+	
+	%~~~~~~~~~~~~~~~~~~~~~~~~~~ Item 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~%
+	{\bf Ph.D. Aerospace Engineering and Mechanics} \hfill GPA: 3.90/4 \\
+	{University of Minnesota \hfill } 
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%% Work/Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{\MakeUppercase{Experience}} \vskip 0.15in
+	
+	%~~~~~~~~~~~~~~~~~~~~~~~~~~ Item 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~%
+	\hspace*{-0.25in}{\bf Research Assistant} \hfill 2014-2020 \\
+	\hspace*{-0.25in}{\it University of Minnesota, Minnesota, MN}
+	\begin{itemize}[leftmargin=\parindent]
+	\setlength{\itemsep}{0mm} \smallskip
+	
+		\item Developed LES capabilities to study turbulent cavitating flows in complex geometries.
+	\end{itemize}
+	
+	
+	
+	
+		
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%% Publications %%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{\MakeUppercase{Publications}} \vskip 0.35in
+	\begin{itemize}[leftmargin=\parindent]
+	\setlength{\itemsep}{4pt}
+	
+	%~~~~~~~~~~~~~~~~~~~~~~~~~~ Item 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~%
+	\item[] \href{https://dept.aem.umn.edu/~kmahesh/globalassets/publpdf/journal/mrugank_ijmf19.pdf}{Numerical investigation of partial cavitation regimes over a wedge using large-eddy simulation.}, **Mrugank Bhatt**, Krishnan Mahesh, International Journal of Multiphase Flow, 0:377-406, 2020.
+	\end{itemize}
+	
+	
+	
+		
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%% Skills %%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{\MakeUppercase{Skills}} \vskip 0.35in
+	\begin{itemize}[leftmargin=\parindent]
+	\setlength{\itemsep}{0mm}
+	
+	%~~~~~~~~~~~~~~~~~~~~~~~~~~ Item 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~%
+		\item[] {\bf Grid generation tools}: Gridpro, Pointwise
+	\end{itemize}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{\MakeUppercase{Awards \& Achievements}} \vskip 0.35in
+	\begin{itemize}[leftmargin=\parindent]
+	\setlength{\itemsep}{0mm}
+	
+	%~~~~~~~~~~~~~~~~~~~~~~~~~~ Item 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~%
+		\item[] {\bf Institute Silver Medal}:  Best academic performance in the Department of Aerospace Engineering. IIT Kharagpur, May 2014
+	\end{itemize}
+	
+	
+	\end{resume}
+	\end{document}
+	
